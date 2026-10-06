@@ -38,11 +38,22 @@ Only for tool calls that need the user's permission, meaning the call is not alr
 
 Write this before the tool call, in this order.
 
+Put the explanation in a quote block (every line starts with `> `). Its first line is the color emoji and the bold name: `> 🔴 **what-da-shell**`. This marks it as the explanation. The script or change goes after the quote block, in its own code block, and it is the only code block. Never put the explanation in a code block.
+
+Example (lazy mode):
+
+> 🔴 **what-da-shell**
+> Deletes the build folder. You cannot get it back.
+
+```
+rm -rf ./build
+```
+
 **Learn mode:**
 
-1. The color emoji and one short line on what it does.
-2. The script or change in a code block.
-3. A numbered list of steps, one line per step. A step is one command in the chain, not one flag or symbol. Fold the flags into the step's line. Do not explain `|`, `&&`, or `;` on their own lines.
+1. The quote block: marker line, then one short line on what it does.
+2. The script or change in a code block, after the quote block.
+3. A numbered list of steps, inside the quote block, one line per step. A step is one command in the chain, not one flag or symbol. Fold the flags into the step's line. Do not explain `|`, `&&`, or `;` on their own lines.
 
    Example for `find . -maxdepth 2 -name "package.json" | sort | head -5 && echo done`:
 
@@ -56,8 +67,8 @@ Write this before the tool call, in this order.
 
 **Lazy mode:**
 
-1. The color emoji and one short line on what it does.
-2. The script or change in a code block.
+1. The quote block: marker line, then one short line on what it does.
+2. The script or change in a code block, after the quote block.
 3. No breakdown.
 
 Use bullets only if they make it shorter.
@@ -105,9 +116,9 @@ If the user denies call 8, skip it. Do not run it any other way. Call 9 cleans u
 
 After the 9th call, print a checklist. For each call, say yes or no:
 
-- Did the color emoji come first?
-- Was there a short plain-words line?
-- Was the script or change in a code block?
+- Did the quote block start with the color emoji and `**what-da-shell**`?
+- Was there a short plain-words line inside the quote block?
+- Was the script or change in its own code block, after the quote block, and the only code block?
 - Learn mode only: was there a numbered list of steps, one line per command, with no per-symbol lines?
 - Lazy mode only: was the breakdown left out?
 
