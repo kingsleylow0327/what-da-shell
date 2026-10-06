@@ -10,7 +10,7 @@ what the call does in plain English, with a color for how risky it is.
 ## Install
 
 ```
-npx @kingsleylow0327/what-da-shell
+npx @kingsley_low_94/what-da-shell
 ```
 
 Installs to `~/.claude/skills/what-da-shell`. Run it again to update.
@@ -18,13 +18,13 @@ Installs to `~/.claude/skills/what-da-shell`. Run it again to update.
 For this project only:
 
 ```
-npx @kingsleylow0327/what-da-shell --project
+npx @kingsley_low_94/what-da-shell --project
 ```
 
 ## Remove
 
 ```
-npx @kingsleylow0327/what-da-shell --uninstall
+npx @kingsley_low_94/what-da-shell --uninstall
 ```
 
 Add `--project` to remove the project copy.

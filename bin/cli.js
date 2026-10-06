@@ -8,7 +8,7 @@ const args = process.argv.slice(2);
 const flags = new Set(args);
 
 if (flags.has("--help") || flags.has("-h")) {
-  console.log(`Usage: npx @kingsleylow0327/what-da-shell [options]
+  console.log(`Usage: npx @kingsley_low_94/what-da-shell [options]
 
   (no option)   Install the skill to ~/.claude/skills/${NAME}
   --project     Use ./.claude/skills/${NAME} instead

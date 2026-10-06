@@ -1,5 +1,5 @@
 {
-  "name": "@kingsleylow0327/what-da-shell",
+  "name": "@kingsley_low_94/what-da-shell",
   "version": "0.1.0",
   "description": "A Claude Code skill that explains tool calls in plain English before asking for permission.",
   "bin": {
