@@ -1,0 +1,25 @@
+{
+  "name": "@kingsleylow0327/what-da-shell",
+  "version": "0.1.0",
+  "description": "A Claude Code skill that explains tool calls in plain English before asking for permission.",
+  "bin": {
+    "what-da-shell": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "what-da-shell"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kingsleylow0327/what-da-shell.git"
+  },
+  "keywords": [
+    "claude-code",
+    "skill",
+    "shell"
+  ],
+  "license": "MIT"
+}
